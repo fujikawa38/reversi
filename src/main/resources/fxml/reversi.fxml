@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane fx:controller="com.example.reversi.controller.ReversiController" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx">
+	<center>
+		
+	</center>
+</BorderPane>

@@ -1,7 +1,9 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.5.5'
-	id 'io.spring.dependency-management' version '1.1.7'
+	id 'org.springframework.boot' version '3.2.0'
+	id 'io.spring.dependency-management' version '1.1.4'
+	id 'org.openjfx.javafxplugin' version '0.1.0'
+	id 'application'
 }
 
 group = 'com.example'
@@ -26,6 +28,10 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.openjfx:javafx-base:17'
+	implementation 'org.openjfx:javafx-controls:17'
+	implementation 'org.openjfx:javafx-fxml:17'
+	implementation 'org.openjfx:javafx-graphics:17'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'
@@ -35,4 +41,13 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+javafx {
+	version = "17"
+	modules = ['javafx.controls', 'javafx.fxml']
+}
+
+application {
+	mainClass = 'com.example.reversi.ReversiApplication'
 }
