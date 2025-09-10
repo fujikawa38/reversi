@@ -8,6 +8,30 @@
 
 <BorderPane fx:controller="com.example.reversi.controller.ReversiController" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx">
 	<center>
-		
+		<GridPane fx:id="boardGrid" alignment="center" hgap="5" vgap="5" style="-fx-background-color: #006400">
+			<columnConstraints>
+				<ColumnConstraints percentWidth="12.5" />
+				<ColumnConstraints percentWidth="12.5" />
+				<ColumnConstraints percentWidth="12.5" />
+				<ColumnConstraints percentWidth="12.5" />
+				<ColumnConstraints percentWidth="12.5" />
+				<ColumnConstraints percentWidth="12.5" />
+				<ColumnConstraints percentWidth="12.5" />
+				<ColumnConstraints percentWidth="12.5" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints percentHeight="12.5" />
+				<RowConstraints percentHeight="12.5" />
+				<RowConstraints percentHeight="12.5" />
+				<RowConstraints percentHeight="12.5" />
+				<RowConstraints percentHeight="12.5" />
+				<RowConstraints percentHeight="12.5" />
+				<RowConstraints percentHeight="12.5" />
+				<RowConstraints percentHeight="12.5" />
+			</rowConstraints>
+		</GridPane>
 	</center>
+	<top>
+		<Label fx:id="statusLabel" text="黒のターン" BorderPane.alignment="CENTER" style="-fx-font-size: 24px; -fx-padding: 10;" />
+	</top>
 </BorderPane>
